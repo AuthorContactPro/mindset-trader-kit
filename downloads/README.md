@@ -1,10 +1,12 @@
  Kit Mindset PDF
 
-Placeholder per i 7 PDF del kit mindset
+Qui vanno caricati i 7 PDF del kit mindset gratuito:
 
-## Contenuto della cartella
-Questa cartella conterrà i PDF del kit mindset che verranno caricati successivamente.
-
-## Note
-- I file PDF saranno disponibili per il download diretto
-- Ogni PDF rappresenta una componente del kit mindset completo
+- checklist-pre-trading.pdf
+- protocollo-sos.pdf  
+- formule-rischio.pdf
+- scala-emotiva.pdf
+- contratto-disciplina.pdf
+- diario-90-giorni.pdf
+- piano-recupero.pdf
+- kit-mindset-completo.zip (tutti insieme)
