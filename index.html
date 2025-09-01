@@ -922,9 +922,9 @@
                 
                 <!-- Download All Button -->
                 <div style="text-align: center; margin-bottom: 50px;" class="fade-in">
-                    <a href="https://authorcontactpro.github.io/mindset-trader-kit/kit-mindset-trader-disciplinato.zip" 
+                    <a href="https://authorcontactpro.github.io/mindset-trader-kit/kit-mindset-trader.zip" 
                        class="cta-button" 
-                       download="Kit-Mindset-Trader-Disciplinato.zip"
+                       download="Kit-Mindset-Trader.zip"
                        aria-label="Scarica tutti i 7 PDF del kit mindset in un file ZIP">
                         SCARICA TUTTI I 7 PDF (ZIP)
                     </a>
@@ -944,7 +944,7 @@
                             <span style="font-size: 1rem; font-weight: 500;">Checklist Pre-Trading</span>
                         </a>
                         
-                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/protocollo-sos-anti-emozioni.pdf" 
+                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/protocollo-sos.pdf" 
                            download="Protocollo-SOS-Anti-Emozioni.pdf"
                            style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
                            onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
@@ -953,7 +953,7 @@
                             <span style="font-size: 1rem; font-weight: 500;">Protocollo SOS Anti-Emozioni</span>
                         </a>
                         
-                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/formule-gestione-rischio.pdf" 
+                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/formule-rischio.pdf" 
                            download="Formule-Gestione-Rischio.pdf"
                            style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
                            onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
@@ -962,7 +962,7 @@
                             <span style="font-size: 1rem; font-weight: 500;">Formule Gestione Rischio</span>
                         </a>
                         
-                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/scala-stato-emotivo.pdf" 
+                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/scala-emotiva.pdf" 
                            download="Scala-Stato-Emotivo.pdf"
                            style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
                            onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
@@ -989,7 +989,7 @@
                             <span style="font-size: 1rem; font-weight: 500;">Diario 90 Giorni</span>
                         </a>
                         
-                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/piano-recupero-drawdown.pdf" 
+                        <a href="https://authorcontactpro.github.io/mindset-trader-kit/piano-recupero.pdf" 
                            download="Piano-Recupero-Drawdown.pdf"
                            style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
                            onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
@@ -1019,10 +1019,39 @@
         <div class="container">
             <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
                 © 2024 Lysanna De Carlo - Tutti i diritti riservati | 
-                <a href="#privacy" style="color: var(--gold); text-decoration: none;">Privacy Policy</a>
+                <a href="#privacy" style="color: var(--gold); text-decoration: none;" onclick="openPrivacyModal()">Privacy Policy</a>
             </p>
         </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
+        <div style="max-width: 800px; margin: 50px auto; background: white; border-radius: 10px; padding: 40px; color: #333;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2 style="color: #1a1a2e;">Privacy Policy</h2>
+                <button onclick="closePrivacyModal()" style="background: none; border: none; font-size: 24px; cursor: pointer;">&times;</button>
+            </div>
+            
+            <div style="line-height: 1.6;">
+                <h3 style="color: #16213e; margin: 20px 0 10px 0;">Download Gratuiti</h3>
+                <p>Questo sito offre download gratuiti di materiali educativi sul trading. <strong>Non raccogliamo, memorizziamo o tracciamo alcun dato personale.</strong></p>
+                
+                <h3 style="color: #16213e; margin: 20px 0 10px 0;">Nessuna Registrazione Richiesta</h3>
+                <p>Puoi scaricare tutti i PDF del Kit Mindset gratuitamente senza fornire email, nome o altre informazioni personali.</p>
+                
+                <h3 style="color: #16213e; margin: 20px 0 10px 0;">Cookies</h3>
+                <p>Questo sito non utilizza cookies di tracciamento o analytics. Utilizziamo solo cookies tecnici necessari per il funzionamento del sito.</p>
+                
+                <h3 style="color: #16213e; margin: 20px 0 10px 0;">Contenuti</h3>
+                <p>Tutti i materiali forniti sono gratuiti e destinati solo a scopo educativo. Non costituiscono consigli di investimento.</p>
+                
+                <h3 style="color: #16213e; margin: 20px 0 10px 0;">Contatti</h3>
+                <p>Per domande sui contenuti o sul sito: <a href="mailto:Lysanna.carlo@gmail.com" style="color: #e94560;">Lysanna.carlo@gmail.com</a></p>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">Ultimo aggiornamento: Settembre 2024</p>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript for functionality and analytics -->
     <script>
@@ -1049,6 +1078,32 @@
             observer.observe(el);
         });
 
+        // Privacy Policy Modal
+        function openPrivacyModal() {
+            document.getElementById('privacy-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePrivacyModal() {
+            document.getElementById('privacy-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            const modal = document.getElementById('privacy-modal');
+            if (e.target === modal) {
+                closePrivacyModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePrivacyModal();
+            }
+        });
+
         // Custom event tracking for downloads
         document.addEventListener('click', function(e) {
             if (e.target.matches('.cta-button') || e.target.closest('a[download]')) {
@@ -1060,6 +1115,30 @@
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
             console.log('Landing page loaded successfully');
+            
+            // Check if PDFs are accessible
+            const pdfLinks = [
+                'checklist-pre-trading.pdf',
+                'protocollo-sos-anti-emozioni.pdf',
+                'formule-gestione-rischio.pdf', 
+                'scala-stato-emotivo.pdf',
+                'contratto-disciplina.pdf',
+                'diario-90-giorni.pdf',
+                'piano-recupero-drawdown.pdf'
+            ];
+            
+            // Test PDF accessibility (optional)
+            pdfLinks.forEach(pdf => {
+                fetch(`https://authorcontactpro.github.io/mindset-trader-kit/${pdf}`, { method: 'HEAD' })
+                .then(response => {
+                    if (!response.ok) {
+                        console.warn(`PDF not accessible: ${pdf}`);
+                    }
+                })
+                .catch(err => {
+                    console.warn(`Error checking PDF: ${pdf}`, err);
+                });
+            });
         });
     </script>
 
