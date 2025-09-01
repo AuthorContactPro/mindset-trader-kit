@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Scopri il metodo neuroscientifico per sviluppare disciplina mentale e controllo emotivo nel trading. Un sistema pratico di 90 giorni per diventare un Trader Disciplinato.">
+    <meta name="description" content="Scopri il metodo neuroscientifico per sviluppare disciplina mentale e controllo emotivo nel trading. Un Sistema per dominare i mercati finanziari.">
     <meta name="keywords" content="disciplina mentale trading, neuroscienze trading, controllo emotivo trader, mindset trading, Lysanna De Carlo">
     <meta name="author" content="Lysanna De Carlo">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="La Tua Mente è il Tuo Unico Vero Asset | Mente da Trader Disciplinato">
-    <meta property="og:description" content="Metodo neuroscientifico per sviluppare disciplina mentale nel trading. Sistema di 90 giorni per il controllo emotivo. Kit gratuito incluso.">
+    <meta property="og:description" content="Metodo neuroscientifico per sviluppare disciplina mentale nel trading. Kit gratuito con 7 PDF inclusi.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://authorcontactpro.github.io/mindset-trader-kit/cover-mente-trader.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <title>La Tua Mente è il Tuo Unico Vero Asset | Mente da Trader Disciplinato</title>
     
@@ -27,16 +26,12 @@
         "description": "Il Metodo Neuroscientifico per Programmare la tua Mente in 90 Giorni per un Trading Profittevole",
         "genre": "Finance, Psychology, Trading",
         "inLanguage": "it",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Lysanna De Carlo"
-        },
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
-            "description": "Kit gratuito Mindset del Trader Disciplinato incluso"
+            "description": "Kit gratuito con 7 PDF inclusi"
         }
     }
     </script>
@@ -63,24 +58,6 @@
             --shadow-strong: 0 20px 40px rgba(233, 69, 96, 0.3);
         }
 
-        /* Accessibility improvements */
-        *:focus {
-            outline: 2px solid var(--gold);
-            outline-offset: 2px;
-        }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -93,23 +70,6 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-        }
-
-        /* Skip link for accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: var(--gold);
-            color: var(--text-dark);
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-            border-radius: 4px;
-        }
-
-        .skip-link:focus {
-            top: 6px;
         }
 
         /* Header Section */
@@ -137,7 +97,7 @@
             50% { transform: scale(1.1); opacity: 0.1; }
         }
 
-        /* Book Showcase with Real Cover */
+        /* Book Showcase */
         .book-showcase {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -169,13 +129,87 @@
             transform: perspective(1000px) rotateY(-10deg) rotateX(2deg) scale(1.05);
         }
 
-        .book-cover-img {
+        /* Cover CSS Fallback */
+        .book-cover-fallback {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background: linear-gradient(145deg, #0a1428 0%, #162447 30%, #1e3c72 70%, #2a5298 100%);
             border-radius: 8px;
+            position: relative;
+            overflow: hidden;
             border: 2px solid rgba(255, 215, 0, 0.3);
-            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .book-author {
+            color: var(--gold);
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .book-title-main {
+            text-align: center;
+            z-index: 3;
+        }
+
+        .title-line-1, .title-line-2, .title-line-3 {
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 2px 0;
+        }
+
+        .title-line-1 { font-size: 1.8rem; }
+        .title-line-2 { font-size: 1.6rem; }
+        .title-line-3 { font-size: 1.4rem; }
+
+        .book-subtitle-main {
+            text-align: center;
+            z-index: 3;
+        }
+
+        .subtitle-line-1, .subtitle-line-2, .subtitle-line-3, .subtitle-line-4 {
+            color: white;
+            font-size: 0.7rem;
+            line-height: 1.1;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            margin: 1px 0;
+        }
+
+        .subtitle-line-3 {
+            font-size: 0.9rem;
+            color: var(--gold);
+            margin: 3px 0;
+        }
+
+        .bonus-badge {
+            position: absolute;
+            top: 15px;
+            right: -10px;
+            background: linear-gradient(135deg, #ff4500, #ff6b35);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 50%;
+            font-size: 0.6rem;
+            font-weight: bold;
+            text-align: center;
+            min-width: 70px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
         }
 
         .book-spine {
@@ -186,46 +220,6 @@
             height: 100%;
             background: linear-gradient(to bottom, #0f3460, #1a1a2e);
             border-radius: 4px 0 0 4px;
-        }
-
-        .floating-elements {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .floating-elements > div {
-            position: absolute;
-            font-size: 2rem;
-            opacity: 0.6;
-            animation: float 4s ease-in-out infinite;
-        }
-
-        .chart-element {
-            top: 20%;
-            right: -10%;
-            animation-delay: 0s;
-        }
-
-        .brain-element {
-            bottom: 30%;
-            left: -15%;
-            animation-delay: 1s;
-        }
-
-        .target-element {
-            top: 60%;
-            right: -5%;
-            animation-delay: 2s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
         }
 
         .book-content {
@@ -266,7 +260,6 @@
             font-size: 1.1rem;
             margin-bottom: 12px;
             color: var(--text-light);
-            position: relative;
         }
 
         .feature::before {
@@ -493,8 +486,6 @@
             min-width: 250px;
             position: relative;
             overflow: hidden;
-            border: none;
-            cursor: pointer;
         }
 
         .cta-button::before {
@@ -517,61 +508,44 @@
             box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
         }
 
-        .cta-button:focus {
-            transform: translateY(-3px);
-        }
-
-        /* Contact Form */
-        .contact-form {
+        .download-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
             background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 500px;
-            margin: 40px auto 0;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            margin: 10px 0;
         }
 
-        .form-group {
-            margin-bottom: 20px;
+        .download-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+        }
+
+        .download-link .emoji {
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        .download-link .content {
+            flex: 1;
             text-align: left;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--text-light);
-            font-weight: 500;
+        .download-link .title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 3px;
         }
 
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px 16px;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--text-light);
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            border-color: var(--gold);
-            outline: none;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .form-group select option {
-            color: var(--text-dark);
-            background: white;
+        .download-link .description {
+            font-size: 0.9rem;
+            opacity: 0.8;
         }
 
         /* Footer */
@@ -603,30 +577,10 @@
                 padding-left: 0;
             }
 
-            .book-main-title {
-                font-size: 1.8rem;
-            }
-
             .book-cover-container {
                 width: 250px;
                 height: 333px;
                 transform: perspective(800px) rotateY(-10deg) rotateX(3deg);
-            }
-
-            .floating-elements > div {
-                font-size: 1.5rem;
-            }
-
-            .chart-element {
-                right: -5%;
-            }
-
-            .brain-element {
-                left: -10%;
-            }
-
-            .target-element {
-                right: 0%;
             }
 
             .problem-section,
@@ -661,11 +615,6 @@
                 margin: 10px 0;
                 font-size: 1.1rem;
                 padding: 18px 30px;
-            }
-
-            .contact-form {
-                padding: 30px 20px;
-                margin-top: 30px;
             }
         }
 
@@ -703,69 +652,51 @@
         .fade-in {
             animation: fadeInUp 0.6s ease forwards;
         }
-
-        /* High contrast mode support */
-        @media (prefers-contrast: high) {
-            :root {
-                --text-light: #ffffff;
-                --highlight-color: #ff0000;
-                --gold: #ffff00;
-            }
-        }
-
-        /* Reduced motion support */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
-    
-    <main id="main-content">
-        <!-- Hero Section with Real Book Cover -->
-        <section class="hero-section" role="banner">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
             <div class="container">
                 <!-- Book Showcase -->
                 <div class="book-showcase fade-in">
                     <div class="book-visual">
                         <div class="book-cover-container">
-                            <img src="https://authorcontactpro.github.io/mindset-trader-kit/cover-mente-trader.jpg" 
-                                 alt="Copertina del libro Mente da Trader Disciplinato di Lysanna De Carlo - Metodo neuroscientifico per programmare la mente in 90 giorni" 
-                                 class="book-cover-img"
-                                 loading="lazy">
+                            <!-- Cover Fallback CSS (dato che l'immagine non carica) -->
+                            <div class="book-cover-fallback">
+                                <div class="book-author">Lysanna De Carlo</div>
+                                
+                                <div class="bonus-badge">
+                                    <span style="font-size: 0.7rem;">KIT BONUS</span>
+                                    <span style="font-size: 0.5rem;">Mindset del<br>Trader<br>Incluso</span>
+                                </div>
+                                
+                                <div class="book-title-main">
+                                    <div class="title-line-1">MENTE</div>
+                                    <div class="title-line-2">DA TRADER</div>
+                                    <div class="title-line-3">DISCIPLINATO</div>
+                                </div>
+                                
+                                <div class="book-subtitle-main">
+                                    <div class="subtitle-line-1">Il Metodo Neuroscientifico per</div>
+                                    <div class="subtitle-line-2">Programmare la tua Mente in</div>
+                                    <div class="subtitle-line-3"><strong>90 Giorni</strong></div>
+                                    <div class="subtitle-line-4">per un Trading Profittevole</div>
+                                </div>
+                            </div>
                             <div class="book-spine"></div>
                         </div>
-                        <div class="floating-elements">
-                            <div class="chart-element">📊</div>
-                            <div class="brain-element">🧠</div>
-                            <div class="target-element">🎯</div>
-                        </div>
                     </div>
+                    
                     <div class="book-content">
-                        <div class="book-badge" aria-label="Offerta speciale">NON SOLO UN LIBRO:</div>
+                        <div class="book-badge">NON SOLO UN LIBRO:</div>
                         <h2 class="book-main-title">Il metodo D.I.S.C.I.P.L.I.N.A.<br>per dominare i mercati finanziari</h2>
-                        <ul class="book-features" role="list">
-                            <li class="feature" role="listitem">
-                                <span class="sr-only">Incluso:</span>
-                                Protocollo DISCIPLINA completo
-                            </li>
-                            <li class="feature" role="listitem">
-                                <span class="sr-only">Incluso:</span>
-                                4 Tool pratici pronti all'uso
-                            </li>
-                            <li class="feature" role="listitem">
-                                <span class="sr-only">Incluso:</span>
-                                Neuroscienza applicata al trading
-                            </li>
-                            <li class="feature" role="listitem">
-                                <span class="sr-only">Incluso:</span>
-                                Sistema di riprogrammazione mentale
-                            </li>
+                        <ul class="book-features">
+                            <li class="feature">Protocollo DISCIPLINA completo</li>
+                            <li class="feature">7 PDF pratici pronti all'uso</li>
+                            <li class="feature">Neuroscienza applicata al trading</li>
+                            <li class="feature">Sistema di riprogrammazione mentale</li>
                         </ul>
                     </div>
                 </div>
@@ -779,26 +710,26 @@
         </section>
 
         <!-- Problem Section -->
-        <section class="problem-section" aria-labelledby="problem-title">
+        <section class="problem-section">
             <div class="container">
-                <h2 id="problem-title" class="section-title fade-in">Riprogramma il Tuo Software Mentale</h2>
+                <h2 class="section-title fade-in">Riprogramma il Tuo Software Mentale</h2>
                 <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px; color: var(--highlight-color);">Le tue emozioni trasformano setup vincenti in perdite dolorose</p>
                 
-                <div class="problem-grid" role="list" aria-label="Problemi comuni nel trading">
-                    <article class="problem-card fade-in" role="listitem">
+                <div class="problem-grid">
+                    <div class="problem-card fade-in">
                         <h3>🎯 Setup Imperfetti</h3>
                         <p>Il setup non è perfetto, ma hai paura di perdere l'occasione. Entri comunque. E il finale è sempre lo stesso: il tuo conto che sanguina.</p>
-                    </article>
+                    </div>
                     
-                    <article class="problem-card fade-in" role="listitem">
+                    <div class="problem-card fade-in">
                         <h3>📉 Stop Loss Ignorati</h3>
                         <p>Il prezzo si avvicina al tuo stop. "Solo altri 10 pip", pensi. E trasformi una piccola perdita in un disastro.</p>
-                    </article>
+                    </div>
                     
-                    <article class="problem-card fade-in" role="listitem">
+                    <div class="problem-card fade-in">
                         <h3>⚡ Revenge Trading</h3>
                         <p>Dopo una perdita, raddoppi la size per riprenderti tutto subito. Il mercato ti punisce ancora più duramente.</p>
-                    </article>
+                    </div>
                 </div>
 
                 <div style="text-align: center; margin-top: 40px;" class="fade-in">
@@ -809,193 +740,200 @@
         </section>
 
         <!-- Science Section -->
-        <section class="science-section" aria-labelledby="science-title">
+        <section class="science-section">
             <div class="container">
-                <h2 id="science-title" class="section-title fade-in">La Scienza Ha Già Trovato la Risposta</h2>
+                <h2 class="section-title fade-in">La Scienza Ha Già Trovato la Risposta</h2>
                 <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">Mentre i "guru" vendono strategie complesse, il Protocollo DISCIPLINA si basa su scoperte rivoluzionarie:</p>
                 
-                <div class="science-grid" role="list" aria-label="Ricerche scientifiche di supporto">
-                    <article class="science-item fade-in" role="listitem">
-                        <span class="science-icon" aria-hidden="true">📊</span>
+                <div class="science-grid">
+                    <div class="science-item fade-in">
+                        <span class="science-icon">📊</span>
                         <h3>Ricerca Stanford</h3>
                         <p>Come sviluppare il cervello di un trader professionista in 90 giorni</p>
-                    </article>
+                    </div>
                     
-                    <article class="science-item fade-in" role="listitem">
-                        <span class="science-icon" aria-hidden="true">📈</span>
+                    <div class="science-item fade-in">
+                        <span class="science-icon">📈</span>
                         <h3>Studio su 1.600 Trader</h3>
                         <p>La prova matematica che solo il 3% ha successo</p>
-                    </article>
+                    </div>
                     
-                    <article class="science-item fade-in" role="listitem">
-                        <span class="science-icon" aria-hidden="true">🧠</span>
+                    <div class="science-item fade-in">
+                        <span class="science-icon">🧠</span>
                         <h3>Analisi MIT</h3>
                         <p>Perché un QI più alto spesso porta a perdite maggiori</p>
-                    </article>
+                    </div>
                     
-                    <article class="science-item fade-in" role="listitem">
-                        <span class="science-icon" aria-hidden="true">✅</span>
+                    <div class="science-item fade-in">
+                        <span class="science-icon">✅</span>
                         <h3>Studio su 2.000+ Trader</h3>
                         <p>La prova che questo sistema trasforma i risultati</p>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Protocol Section -->
-        <section class="protocol-section" aria-labelledby="protocol-title">
+        <section class="protocol-section">
             <div class="container">
-                <h2 id="protocol-title" class="section-title fade-in">Cosa Ricevi GRATIS nel Kit Mindset</h2>
+                <h2 class="section-title fade-in">Cosa Ricevi GRATIS nel Kit Mindset</h2>
                 
-                <div class="protocol-grid" role="list" aria-label="Contenuto del Kit Mindset gratuito">
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Primo PDF">📋</div>
+                <div class="protocol-grid">
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">📋</div>
                         <h3>Checklist Pre-Trading</h3>
                         <p>5 minuti per entrare nello stato mentale perfetto</p>
-                    </article>
+                        <small>Da stampare e tenere sempre sulla scrivania</small>
+                    </div>
                     
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Secondo PDF">🆘</div>
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">🆘</div>
                         <h3>Protocollo SOS Anti-Emozioni</h3>
                         <p>Da tenere sempre sulla scrivania</p>
-                    </article>
+                        <small>Il tuo piano di emergenza emotiva</small>
+                    </div>
                     
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Terzo PDF">📊</div>
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">📊</div>
                         <h3>Formule Gestione Rischio</h3>
                         <p>Calcoli automatici per ogni operazione</p>
-                    </article>
+                        <small>Matematica della sopravvivenza nei mercati</small>
+                    </div>
                     
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Quarto PDF">🌡️</div>
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">🌡️</div>
                         <h3>Scala Stato Emotivo</h3>
                         <p>Il tuo termometro delle emozioni</p>
-                    </article>
+                        <small>Misura e controlla il tuo stato mentale</small>
+                    </div>
                     
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Quinto PDF">📝</div>
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">📝</div>
                         <h3>Contratto di Disciplina</h3>
                         <p>Il patto con te stesso che non potrai violare</p>
-                    </article>
+                        <small>La tua costituzione personale del trading</small>
+                    </div>
                     
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Sesto PDF">📅</div>
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">📅</div>
                         <h3>Diario 90 Giorni</h3>
                         <p>Traccia la tua trasformazione neurologica</p>
-                    </article>
+                        <small>Il percorso della tua evoluzione mentale</small>
+                    </div>
                     
-                    <article class="protocol-card fade-in" role="listitem">
-                        <div class="protocol-number" aria-label="Settimo PDF">🚑</div>
+                    <div class="protocol-card fade-in">
+                        <div class="protocol-number">🚑</div>
                         <h3>Piano Recupero Drawdown</h3>
                         <p>Come rialzarsi psicologicamente dalle perdite</p>
-                    </article>
+                        <small>La roadmap per tornare più forte di prima</small>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonials Section -->
-        <section class="testimonials-section" aria-labelledby="testimonials-title">
+        <section class="testimonials-section">
             <div class="container">
-                <h2 id="testimonials-title" class="section-title fade-in">Quello Che Dicono i Trader</h2>
+                <h2 class="section-title fade-in">Quello Che Dicono i Trader</h2>
                 
-                <div class="testimonials-grid" role="list" aria-label="Testimonianze degli utenti">
-                    <blockquote class="testimonial fade-in" role="listitem">
+                <div class="testimonials-grid">
+                    <div class="testimonial fade-in">
                         <p>Finalmente ho trovato un approccio che funziona davvero. Il termometro emotivo è geniale.</p>
-                    </blockquote>
+                    </div>
                     
-                    <blockquote class="testimonial fade-in" role="listitem">
+                    <div class="testimonial fade-in">
                         <p>La checklist pre-trading ha cambiato tutto. Zero operazioni impulsive da 2 mesi.</p>
-                    </blockquote>
+                    </div>
                     
-                    <blockquote class="testimonial fade-in" role="listitem">
+                    <div class="testimonial fade-in">
                         <p>In 3 mesi ho eliminato il revenge trading. Il protocollo SOS mi ha salvato il conto 4 volte.</p>
-                    </blockquote>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section" aria-labelledby="cta-title">
+        <section class="cta-section">
             <div class="container">
-                <h2 id="cta-title" style="font-size: 2.5rem; margin-bottom: 30px; color: white;">Scarica GRATIS i 7 PDF del Kit Mindset</h2>
+                <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: white;">Scarica GRATIS i 7 PDF del Kit Mindset</h2>
                 <p style="font-size: 1.3rem; margin-bottom: 40px; color: white;">Clicca per scaricare immediatamente il toolkit completo che trasformerà il tuo trading.</p>
                 
                 <!-- Download All Button -->
                 <div style="text-align: center; margin-bottom: 50px;" class="fade-in">
                     <a href="https://authorcontactpro.github.io/mindset-trader-kit/kit-mindset-trader.zip" 
                        class="cta-button" 
-                       download="Kit-Mindset-Trader.zip"
-                       aria-label="Scarica tutti i 7 PDF del kit mindset in un file ZIP">
+                       download="Kit-Mindset-Trader.zip">
                         SCARICA TUTTI I 7 PDF (ZIP)
                     </a>
                 </div>
                 
                 <!-- Individual PDF Downloads -->
-                <div class="kit-contents fade-in" style="margin: 40px auto; max-width: 800px;">
+                <div class="fade-in" style="max-width: 800px; margin: 0 auto;">
                     <h3 style="color: white; text-align: center; margin-bottom: 30px; font-size: 1.3rem;">Oppure scarica singolarmente:</h3>
+                    
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 15px;">
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/checklist-pre-trading.pdf" 
-                           download="Checklist-Pre-Trading.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">📋</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Checklist Pre-Trading</span>
+                           class="download-link" download="Checklist-Pre-Trading.pdf">
+                            <span class="emoji">📋</span>
+                            <div class="content">
+                                <div class="title">Checklist Pre-Trading</div>
+                                <div class="description">5 minuti per entrare nello stato mentale perfetto</div>
+                            </div>
                         </a>
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/protocollo-sos.pdf" 
-                           download="Protocollo-SOS-Anti-Emozioni.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">🆘</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Protocollo SOS Anti-Emozioni</span>
+                           class="download-link" download="Protocollo-SOS-Anti-Emozioni.pdf">
+                            <span class="emoji">🆘</span>
+                            <div class="content">
+                                <div class="title">Protocollo SOS Anti-Emozioni</div>
+                                <div class="description">Da tenere sempre sulla scrivania</div>
+                            </div>
                         </a>
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/formule-rischio.pdf" 
-                           download="Formule-Gestione-Rischio.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">📊</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Formule Gestione Rischio</span>
+                           class="download-link" download="Formule-Gestione-Rischio.pdf">
+                            <span class="emoji">📊</span>
+                            <div class="content">
+                                <div class="title">Formule Gestione Rischio</div>
+                                <div class="description">Calcoli automatici per ogni operazione</div>
+                            </div>
                         </a>
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/scala-emotiva.pdf" 
-                           download="Scala-Stato-Emotivo.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">🌡️</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Scala Stato Emotivo</span>
+                           class="download-link" download="Scala-Stato-Emotivo.pdf">
+                            <span class="emoji">🌡️</span>
+                            <div class="content">
+                                <div class="title">Scala Stato Emotivo</div>
+                                <div class="description">Il tuo termometro delle emozioni</div>
+                            </div>
                         </a>
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/contratto-disciplina.pdf" 
-                           download="Contratto-Disciplina.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">📝</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Contratto di Disciplina</span>
+                           class="download-link" download="Contratto-Disciplina.pdf">
+                            <span class="emoji">📝</span>
+                            <div class="content">
+                                <div class="title">Contratto di Disciplina</div>
+                                <div class="description">Il patto con te stesso che non potrai violare</div>
+                            </div>
                         </a>
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/diario-90-giorni.pdf" 
-                           download="Diario-90-Giorni.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">📅</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Diario 90 Giorni</span>
+                           class="download-link" download="Diario-90-Giorni.pdf">
+                            <span class="emoji">📅</span>
+                            <div class="content">
+                                <div class="title">Diario 90 Giorni</div>
+                                <div class="description">Traccia la tua trasformazione neurologica</div>
+                            </div>
                         </a>
                         
                         <a href="https://authorcontactpro.github.io/mindset-trader-kit/piano-recupero.pdf" 
-                           download="Piano-Recupero-Drawdown.pdf"
-                           style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px; color: white; text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255,215,0,0.3);"
-                           onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='translateY(-2px)'"
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
-                            <span style="margin-right: 12px; font-size: 1.5rem;">🚑</span>
-                            <span style="font-size: 1rem; font-weight: 500;">Piano Recupero Drawdown</span>
+                           class="download-link" download="Piano-Recupero-Drawdown.pdf">
+                            <span class="emoji">🚑</span>
+                            <div class="content">
+                                <div class="title">Piano Recupero Drawdown</div>
+                                <div class="description">Come rialzarsi psicologicamente dalle perdite</div>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -1015,9 +953,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container">
-            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+            <p style="font-size: 0.9rem; opacity: 0.7;">
                 © 2024 Lysanna De Carlo - Tutti i diritti riservati | 
                 <a href="#privacy" style="color: var(--gold); text-decoration: none;" onclick="openPrivacyModal()">Privacy Policy</a>
             </p>
@@ -1053,7 +991,7 @@
         </div>
     </div>
 
-    <!-- JavaScript for functionality and analytics -->
+    <!-- JavaScript -->
     <script>
         // Intersection Observer for animations
         const observerOptions = {
@@ -1078,7 +1016,7 @@
             observer.observe(el);
         });
 
-        // Privacy Policy Modal
+        // Privacy Policy Modal functions
         function openPrivacyModal() {
             document.getElementById('privacy-modal').style.display = 'block';
             document.body.style.overflow = 'hidden';
@@ -1104,68 +1042,18 @@
             }
         });
 
-        // Custom event tracking for downloads
+        // Download tracking (no personal data)
         document.addEventListener('click', function(e) {
-            if (e.target.matches('.cta-button') || e.target.closest('a[download]')) {
-                const downloadType = e.target.matches('.cta-button') ? 'ZIP Download' : 'Individual PDF';
-                console.log('Download clicked:', downloadType);
+            if (e.target.closest('a[download]')) {
+                const fileName = e.target.closest('a[download]').getAttribute('href').split('/').pop();
+                console.log('Download clicked:', fileName);
             }
         });
         
-        // Initialize when page loads
+        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Landing page loaded successfully');
-            
-            // Check if PDFs are accessible
-            const pdfLinks = [
-                'checklist-pre-trading.pdf',
-                'protocollo-sos-anti-emozioni.pdf',
-                'formule-gestione-rischio.pdf', 
-                'scala-stato-emotivo.pdf',
-                'contratto-disciplina.pdf',
-                'diario-90-giorni.pdf',
-                'piano-recupero-drawdown.pdf'
-            ];
-            
-            // Test PDF accessibility (optional)
-            pdfLinks.forEach(pdf => {
-                fetch(`https://authorcontactpro.github.io/mindset-trader-kit/${pdf}`, { method: 'HEAD' })
-                .then(response => {
-                    if (!response.ok) {
-                        console.warn(`PDF not accessible: ${pdf}`);
-                    }
-                })
-                .catch(err => {
-                    console.warn(`Error checking PDF: ${pdf}`, err);
-                });
-            });
+            console.log('Landing page caricata con successo');
         });
-    </script>
-
-    <!-- Schema.org structured data for better SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LandingPage",
-        "name": "La Tua Mente è il Tuo Unico Vero Asset - Kit Gratuito",
-        "description": "Scopri il metodo neuroscientifico per sviluppare disciplina mentale e controllo emotivo nel trading. Sistema di 90 giorni per diventare un Trader Disciplinato.",
-        "author": {
-            "@type": "Person",
-            "name": "Lysanna De Carlo"
-        },
-        "mainEntity": {
-            "@type": "Book",
-            "name": "Mente da Trader Disciplinato",
-            "author": "Lysanna De Carlo",
-            "description": "Il Metodo Neuroscientifico per Programmare la tua Mente in 90 Giorni per un Trading Profittevole",
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "EUR",
-                "availability": "InStock"
-            }
-        }
-    }
     </script>
 </body>
 </html>
