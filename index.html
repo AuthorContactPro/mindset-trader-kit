@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -663,8 +663,15 @@
                 <div class="book-showcase fade-in">
                     <div class="book-visual">
                         <div class="book-cover-container">
-                            <!-- Cover Fallback CSS (dato che l'immagine non carica) -->
-                            <div class="book-cover-fallback">
+                            <!-- Link corretto alla tua cover -->
+                            <img src="https://authorcontactpro.github.io/mindset-trader-kit/cover-mente-trader.jpg" 
+                                 alt="Cover Mente da Trader Disciplinato di Lysanna De Carlo" 
+                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; border: 2px solid rgba(255, 215, 0, 0.3);"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                                 onload="console.log('✅ Cover caricata correttamente!')">>
+                            
+                            <!-- Fallback solo se l'immagine non carica -->
+                            <div class="book-cover-fallback" style="display: none;">
                                 <div class="book-author">Lysanna De Carlo</div>
                                 
                                 <div class="bonus-badge">
@@ -860,11 +867,12 @@
                 
                 <!-- Download All Button -->
                 <div style="text-align: center; margin-bottom: 50px;" class="fade-in">
-                    <a href="https://authorcontactpro.github.io/mindset-trader-kit/kit-mindset-trader.zip" 
+                    <a href="https://authorcontactpro.github.io/mindset-trader-kit/kit-mindset-completo.zip" 
                        class="cta-button" 
-                       download="Kit-Mindset-Trader.zip">
+                       download="Kit-Mindset-Completo.zip">
                         SCARICA TUTTI I 7 PDF (ZIP)
                     </a>
+                    <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.8; color: white;">📦 Download immediato - Nessuna registrazione</p>
                 </div>
                 
                 <!-- Individual PDF Downloads -->
